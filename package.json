@@ -1,0 +1,41 @@
+{
+  "name": "vite-template-h5",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "sass": "^1.53.0",
+    "vant": "^3.5.2",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "lint-staged": "^13.0.3",
+    "postcss-px-to-viewport-8-plugin": "^1.1.3",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^2.9.9"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "sass --watch --no-sourcemap --output-style compressed --precision 6 --sourcemap"
+    ]
+  }
+}
