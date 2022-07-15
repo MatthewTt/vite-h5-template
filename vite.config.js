@@ -2,7 +2,7 @@ import { defineConfig, loadEnv } from 'vite'
 
 import { createVitePlugins } from './build/plugin/index'
 
-// https://vitejs.dev/config/
+// https://vitejs.dev/config/;
 export default ({ command, mode }) => {
   const isBuild = command === 'build' // 是否是生产环境
   console.log(command, 'mode')
