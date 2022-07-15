@@ -3,7 +3,7 @@ import { Toast } from 'vant'
 
 const TIMEOUT = 5000
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: process.env.VITE_BASE_URL,
   timeout: TIMEOUT
 })
 
@@ -30,7 +30,7 @@ axiosInstance.interceptors.response.use(
     if (res.code !== 0) {
       if (res.code === 401) {
         // 登录过期提示
-        return
+        return '登录过期'
       }
     } else {
       return res

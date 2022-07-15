@@ -5,9 +5,12 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-
 # 目录
 + Sass 全局样式
-+ eslint + prettier
++ eslint + prettier + husky + lint-staged
 + vw适配方案
 + Axios封装
++ Router
++ vconsole 控制台
+# Usage
+安装Eslint和Prettier
