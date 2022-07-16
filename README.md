@@ -17,9 +17,9 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 
 # 目录
 
-- Sass 全局样式
-- eslint + prettier + husky + lint-staged
-- vw 适配方案
-- Axios 封装
+- Sass 全局样式 ✅
+- eslint + prettier + husky + lint-staged ✅
+- vw 适配方案 ✅
+- Axios 封装 
 - Router
 - vconsole 控制台
