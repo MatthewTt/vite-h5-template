@@ -21,5 +21,6 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 - eslint + prettier + husky + lint-staged ✅
 - vw 适配方案 ✅
 - Axios 封装 ✅
-- Router 
-- vconsole 控制台
+- Router ✅
+- vconsole 控制台 ✅
+- vant按需加载 ✅

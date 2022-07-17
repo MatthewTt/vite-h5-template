@@ -7,28 +7,15 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <button @click="getTemplates">请求</button>
   <HelloWorld msg="Vite + Vue" />
+  <router-view />
+  <mobile-console />
 </template>
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import { getTemplate } from '@/api'
-import { Toast } from 'vant'
-const fetchTemplate = async () => {
-  Toast.loading({
-    message: 'Loading...',
-    duration: 0
-  })
-  const res = await getTemplate()
-  await getTemplate()
-  console.log(res)
-}
-
-const getTemplates = () => {
-  fetchTemplate()
-}
+import MobileConsole from '@/components/MobileConsole/index.vue'
 </script>
 <style scoped>
 .logo {

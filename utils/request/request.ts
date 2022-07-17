@@ -50,7 +50,7 @@ class VAxios {
       (response) => {
         requestCancel.removePending(response.config)
         this.loading && this.removeLoadingCount()
-        return response
+        return response.data
       },
       (error) => {
         // 提示信息
@@ -62,7 +62,6 @@ class VAxios {
 
   addLoadingCount() {
     this.loadingCount++
-    console.log(this.loadingCount)
     if (this.loadingCount === 1) {
       Toast.loading({
         message: '加载中...'
