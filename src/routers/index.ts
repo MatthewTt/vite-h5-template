@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { constantRoutes } from './router-config'
-// import { useDocumentTitle } from '@/hooks/useDocumentTitle'
+import { useDocumentTitle } from '@/hooks/useDocumentTitle'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -15,7 +15,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  // useDocumentTitle(to.meta.title)
+  useDocumentTitle(to.meta.title as string)
   next()
 })
 
